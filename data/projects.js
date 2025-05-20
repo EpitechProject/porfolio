@@ -1,58 +1,52 @@
 export const projects = [
   {
     id: 1,
-    title: "Site e-commerce",
-    description: "Une boutique en ligne complète avec panier et paiement",
-    image: "", // "/images/projects/ecommerce.jpg"
-    tags: ["Next.js", "React", "MongoDB", "Stripe"],
-    demoUrl: "https://demo-ecommerce.example.com",
-    githubUrl: "https://github.com/username/ecommerce",
+    title: "🐉 My Hunter",
+    description: "Recréation du célèbre jeu Duck Hunt avec une ambiance inspirée de Dragon Ball, développé en C avec CSFML.",
+    image: "~/port/porfolio/image/Gwenchana.png",
+    tags: ["C", "CSFML", "Makefile"],
+    githubUrl: "https://github.com/EpitechProject/my_hunter",
     featured: true
   },
   {
     id: 2,
-    title: "Application de gestion de tâches",
-    description: "Application permettant de gérer ses tâches quotidiennes",
+    title: "✅ Epytodo",
+    description: " EpyTodo est un projet visant à développer une API RESTful permettant de gérer une liste de tâches (ToDo List) avec des utilisateurs et des droits d’accès.",
     image: "", // "/images/projects/task-app.jpg"
-    tags: ["React", "Firebase", "CSS Modules"],
-    demoUrl: "https://task-app-demo.example.com",
-    githubUrl: "https://github.com/username/task-app",
+    tags: ["Node.js", "HTML/CSS", "Javascript"],
+    githubUrl: "https://github.com/EpitechProject/EpyTodo",
     featured: true
   },
   {
     id: 3,
-    title: "Blog personnel",
-    description: "Un blog moderne avec système de gestion de contenu",
+    title: "🚄 Tardis",
+    description: " TARDIS (Train Arrival Retard Detection & Inference System) est un projet de data science visant à prédire les retards des trains SNCF grâce à l’analyse de données historiques et à des modèles de machine learning. Il a été réalisé dans le cadre de la formation à Epitech.",
     image: "", // "/images/projects/blog.jpg"
-    tags: ["Next.js", "Markdown", "Tailwind CSS"],
-    demoUrl: "https://blog-demo.example.com",
+    tags: ["Python", "Streamlit", "IA"],
     githubUrl: "https://github.com/username/blog",
   },
   {
     id: 4,
-    title: "Dashboard analytique",
-    description: "Interface d'administration avec visualisation de données",
+    title: "🤖 Amazed",
+    description: "Amazed est un projet où le but est de déplacer un groupe de robots à travers un labyrinthe, de l’entrée jusqu’à la sortie",
     image: "", // "/images/projects/dashboard.jpg"
-    tags: ["React", "D3.js", "API REST"],
-    demoUrl: "https://dashboard-demo.example.com",
-    githubUrl: "https://github.com/username/dashboard",
+    tags: ["Algorithm", "C"],
+    githubUrl: "https://github.com/EpitechProject/A_maze_d",
   },
   {
     id: 5,
-    title: "Application météo",
-    description: "Application météo avec géolocalisation",
+    title: "🚢 Battleship",
+    description: "Un jeu de bataille navale simple et interactif en terminal, codé from scratch en C.",
     image: "", // "/images/projects/weather.jpg"
     tags: ["React", "API", "Geolocation"],
-    demoUrl: "https://weather-demo.example.com",
-    githubUrl: "https://github.com/username/weather-app",
+    githubUrl: "https://github.com/EpitechProject/naval-battle",
   },
   {
     id: 6,
-    title: "Portfolio personnel",
-    description: "Mon portfolio professionnel (ce site)",
+    title: "🐚 Minishell",
+    description: "Minishell est un projet visant à créer un shell simplifié en langage C. L’objectif est de comprendre les bases du fonctionnement d’un shell",
     image: "", // "/images/projects/portfolio.jpg"
     tags: ["Next.js", "Tailwind CSS", "Responsive"],
-    demoUrl: "",
-    githubUrl: "https://github.com/username/portfolio",
+    githubUrl: "https://github.com/EpitechProject/My_Shell",
   }
 ];
