@@ -15,14 +15,24 @@ export default function About() {
           
           <div className="max-w-3xl mx-auto">
             <p className="mb-6 text-lg">
-              Je suis à la recherche d’un stage d’une durée de 4 à 6 mois, entre juillet et décembre. Sérieux, motivé et désireux de développer mes compétences, je souhaite intégrer une entreprise dynamique où 
-              je pourrai contribuer activement à ses projets tout en enrichissant mon expérience professionnelle.
+              🎓 Étudiant en informatique à Epitech Marseille | Passionné par l’Intelligence Artificielle et l’innovation technologique 🤖
+              <br /><br />
+              Actuellement en 2ème année à Epitech, je développe des compétences solides en développement logiciel, algorithmique et gestion de projet. Ce qui me passionne particulièrement, c’est la capacité de l’IA à transformer des idées complexes en solutions concrètes et utiles au quotidien.
+              <br /><br />
+              🔍 Je m'intéresse aux domaines du machine learning, du traitement du langage naturel (NLP) et à l’impact éthique de l’IA. Je consacre une partie de mon temps libre à l’expérimentation sur des projets personnels mêlant automatisation, analyse de données et création d’agents intelligents.
+              <br /><br />
+              🚀 Toujours à la recherche de nouveaux défis et de collaborations enrichissantes, je suis ouvert à toute opportunité de stage ou de projet autour de l’IA, de la data science ou du développement innovant.
+              <br /><br />
+              📩 N'hésitez pas à me contacter pour échanger ou collaborer !
             </p>
             
             <h2 className="text-2xl font-bold mt-12 mb-4">Mon parcours</h2>
             <p className="mb-6">
-              [Décrivez votre parcours académique et professionnel ici. Mentionnez vos études, formations,
-              et expériences professionnelles pertinentes.]
+              🎓 Actuellement étudiant en 1ère année à Epitech Marseille (2024 - présent).
+              <br />
+              🎓 J’ai effectué 3 années d’études en informatique à Aix-Marseille Université de 2021 à 2024.
+              <br />
+              🎓 J’ai obtenu mon baccalauréat en 2020 (filière Mathématiques) au sein de l'école privée Les Iris.
             </p>
             
             <h2 className="text-2xl font-bold mt-12 mb-4">Mes compétences techniques</h2>
@@ -47,11 +57,12 @@ export default function About() {
               </div>
             </div>
             
-            <h2 className="text-2xl font-bold mt-12 mb-4">Centres d'intérêt</h2>
-            <p className="mb-6">
-              En dehors du développement web, je m'intéresse à [mentionnez vos hobbies et centres d'intérêt].
-              Je suis toujours à la recherche de nouvelles connaissances et compétences à acquérir.
-            </p>
+              <h2 className="text-2xl font-bold mt-12 mb-4">Centres d'intérêt</h2>
+              <p className="mb-6">
+                En dehors de mes études et projets, je consacre beaucoup de temps au développement web et à l’automatisation de processus, notamment en utilisant la plateforme N8N.
+                <br /><br />
+                Pour équilibrer ma vie professionnelle et personnelle, je pratique régulièrement le basket et la musculation. Ces activités me permettent de garder un bon équilibre physique et mental tout en favorisant l'esprit d'équipe et la persévérance.
+              </p>
           </div>
         </div>
       </section>

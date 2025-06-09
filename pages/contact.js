@@ -133,8 +133,8 @@ export default function Contact() {
               <a href="https://www.linkedin.com/in/tikinas-oughlis-20803b337/" target="_blank" rel="noopener noreferrer" className="text-gray-700 hover:text-gray-900">
                 LinkedIn
               </a>
-              <a href="https://twitter.com/username" target="_blank" rel="noopener noreferrer" className="text-gray-700 hover:text-gray-900">
-                Twitter
+              <a href="https://www.instagram.com/tikinasoughlis/" target="_blank" rel="noopener noreferrer" className="text-gray-700 hover:text-gray-900">
+                Instagram
               </a>
             </div>
           </div>

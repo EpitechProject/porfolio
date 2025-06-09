@@ -3,7 +3,7 @@ export const projects = [
     id: 1,
     title: "🐉 My Hunter",
     description: "Recréation du célèbre jeu Duck Hunt avec une ambiance inspirée de Dragon Ball, développé en C avec CSFML.",
-    image: "~/port/porfolio/image/Gwenchana.png",
+    image: "/images/zhunter.png",
     tags: ["C", "CSFML", "Makefile"],
     githubUrl: "https://github.com/EpitechProject/my_hunter",
     featured: true
@@ -12,7 +12,7 @@ export const projects = [
     id: 2,
     title: "✅ Epytodo",
     description: " EpyTodo est un projet visant à développer une API RESTful permettant de gérer une liste de tâches (ToDo List) avec des utilisateurs et des droits d’accès.",
-    image: "", // "/images/projects/task-app.jpg"
+    image: "/images/epytodo.png",
     tags: ["Node.js", "HTML/CSS", "Javascript"],
     githubUrl: "https://github.com/EpitechProject/EpyTodo",
     featured: true
@@ -21,7 +21,7 @@ export const projects = [
     id: 3,
     title: "🚄 Tardis",
     description: " TARDIS (Train Arrival Retard Detection & Inference System) est un projet de data science visant à prédire les retards des trains SNCF grâce à l’analyse de données historiques et à des modèles de machine learning. Il a été réalisé dans le cadre de la formation à Epitech.",
-    image: "", // "/images/projects/blog.jpg"
+    image: "/images/tardis.png",
     tags: ["Python", "Streamlit", "IA"],
     githubUrl: "https://github.com/username/blog",
   },
@@ -37,7 +37,7 @@ export const projects = [
     id: 5,
     title: "🚢 Battleship",
     description: "Un jeu de bataille navale simple et interactif en terminal, codé from scratch en C.",
-    image: "", // "/images/projects/weather.jpg"
+    image: "/images/battle.png",
     tags: ["React", "API", "Geolocation"],
     githubUrl: "https://github.com/EpitechProject/naval-battle",
   },
@@ -45,7 +45,7 @@ export const projects = [
     id: 6,
     title: "🐚 Minishell",
     description: "Minishell est un projet visant à créer un shell simplifié en langage C. L’objectif est de comprendre les bases du fonctionnement d’un shell",
-    image: "", // "/images/projects/portfolio.jpg"
+    image: "/images/shell.png",
     tags: ["Next.js", "Tailwind CSS", "Responsive"],
     githubUrl: "https://github.com/EpitechProject/My_Shell",
   }

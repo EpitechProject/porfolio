@@ -7,18 +7,18 @@ export default function Footer() {
         <div className="flex flex-col md:flex-row justify-between items-center">
           <div className="mb-6 md:mb-0">
             <h3 className="text-xl font-bold">Mon Portfolio</h3>
-            <p className="mt-2 text-gray-300">Développeur Web Full Stack</p>
+            <p className="mt-2 text-gray-300">Développeur Full Stack & Automatisation</p>
           </div>
           
           <div className="flex space-x-6">
-            <a href="https://github.com/username" target="_blank" rel="noopener noreferrer" className="text-gray-300 hover:text-white">
+            <a href="https://github.com/orgs/EpitechProject/repositories" target="_blank" rel="noopener noreferrer" className="text-gray-300 hover:text-white">
               GitHub
             </a>
-            <a href="https://linkedin.com/in/username" target="_blank" rel="noopener noreferrer" className="text-gray-300 hover:text-white">
+            <a href="https://www.linkedin.com/in/tikinas-oughlis-20803b337/" target="_blank" rel="noopener noreferrer" className="text-gray-300 hover:text-white">
               LinkedIn
             </a>
-            <a href="https://twitter.com/username" target="_blank" rel="noopener noreferrer" className="text-gray-300 hover:text-white">
-              Twitter
+            <a href="https://www.instagram.com/tikinasoughlis/" target="_blank" rel="noopener noreferrer" className="text-gray-300 hover:text-white">
+              Instagram
             </a>
           </div>
         </div>

@@ -17,9 +17,9 @@ export default function Home() {
             <h1 className="text-4xl font-bold leading-tight mt-4 mb-2">
               Bonjour, je suis <span className="text-blue-600">Tikinas Oughlis</span>
             </h1>
-            <h2 className="text-2xl mb-6">Développeur Web Full Stack</h2>
+            <h2 className="text-2xl mb-6">Développeur Web Full Stack & Automatisation</h2>
             <p className="leading-normal mb-8">
-              Etudiant en 1ère année à l'ecole d'excellence <strong>EPITECH</strong> au programme PGE.
+              Etudiant en 2ème année à l'ecole d'excellence <strong>EPITECH</strong> au programme PGE.
             </p>
             <div className="flex justify-center md:justify-start gap-4">
               <Link
