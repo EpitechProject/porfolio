@@ -28,7 +28,7 @@ export default function About() {
             
             <h2 className="text-2xl font-bold mt-12 mb-4">Mon parcours</h2>
             <p className="mb-6">
-              🎓 Actuellement étudiant en 1ère année à Epitech Marseille (2024 - présent).
+              🎓 Actuellement étudiant en 2ème année à Epitech Marseille (2024 - présent).
               <br />
               🎓 J’ai effectué 3 années d’études en informatique à Aix-Marseille Université de 2021 à 2024.
               <br />
