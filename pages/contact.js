@@ -1,7 +1,6 @@
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 import Head from 'next/head';
 import Layout from '../components/Layout';
-import emailjs from 'emailjs-com';
 
 export default function Contact() {
   const [formData, setFormData] = useState({
@@ -13,13 +12,6 @@ export default function Contact() {
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [submitStatus, setSubmitStatus] = useState(null);
 
-  useEffect(() => {
-    // Initialize EmailJS with environment variable
-    if (process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY) {
-      emailjs.init(process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY);
-    }
-  }, []);
-
   const handleChange = (e) => {
     setFormData({
       ...formData,
@@ -29,38 +21,36 @@ export default function Contact() {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    
-    // Vérifier que les variables d'environnement sont présentes
-    if (!process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID || !process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID) {
-      setSubmitStatus('error-config');
-      setTimeout(() => setSubmitStatus(null), 5000);
-      return;
-    }
-    
     setIsSubmitting(true);
 
     try {
-      await emailjs.send(
-        process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID,
-        process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID,
-        {
-          from_name: formData.name,
-          from_email: formData.email,
+      const response = await fetch('https://formspree.io/f/xnjokkao', {
+        method: 'POST',
+        body: JSON.stringify({
+          name: formData.name,
+          email: formData.email,
           subject: formData.subject,
-          message: formData.message,
-          to_email: "tikinas.oughlis@epitech.eu"
+          message: formData.message
+        }),
+        headers: {
+          'Content-Type': 'application/json'
         }
-      );
-      
-      setSubmitStatus('success');
-      setFormData({ name: '', email: '', subject: '', message: '' });
-      setTimeout(() => setSubmitStatus(null), 5000);
+      });
+
+      if (response.ok) {
+        setSubmitStatus('success');
+        setFormData({ name: '', email: '', subject: '', message: '' });
+        setTimeout(() => setSubmitStatus(null), 5000);
+      } else {
+        setSubmitStatus('error');
+        setTimeout(() => setSubmitStatus(null), 5000);
+      }
     } catch (error) {
-      console.error('Erreur EmailJS:', error);
+      console.error('Erreur:', error);
       setSubmitStatus('error');
       setTimeout(() => setSubmitStatus(null), 5000);
     }
-    
+
     setIsSubmitting(false);
   };
 
@@ -129,12 +119,6 @@ export default function Contact() {
                 {submitStatus === 'error' && (
                   <div className="mb-4 p-4 bg-red-100 border border-red-400 text-red-700 rounded" role="alert">
                     Erreur lors de l'envoi. Veuillez réessayer ou m'envoyer un email directement.
-                  </div>
-                )}
-
-                {submitStatus === 'error-config' && (
-                  <div className="mb-4 p-4 bg-yellow-100 border border-yellow-400 text-yellow-700 rounded" role="alert">
-                    ⚠️ Configuration EmailJS manquante. Veuillez configurer les variables d'environnement sur Vercel.
                   </div>
                 )}
 
