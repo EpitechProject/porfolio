@@ -12,7 +12,7 @@ export const projects = [
     id: 2,
     title: "♟️ Checkers",
     description: "Checkers.com est une plateforme de jeu de dames en ligne avec interface moderne et gameplay fluide. Jouez contre d'autres joueurs, consultez vos statistiques et améliorez votre stratégie.",
-    image: "/images/checkers.png",
+    image: "/images/checkers.jpg",
     tags: ["Next.js", "React", "Tailwind", "Gameplay"],
     githubUrl: "https://nextjs-boilerplate-henna-zeta-38.vercel.app/",
     featured: true
