@@ -5,8 +5,11 @@ export default function About() {
   return (
     <Layout>
       <Head>
-        <title>À propos | Mon Portfolio</title>
-        <meta name="description" content="En savoir plus sur mon parcours et mes compétences" />
+        <title>À propos | Tikinas Oughlis - Développeur IA à Epitech</title>
+        <meta name="description" content="Découvrez mon parcours, mes compétences en IA, développement full stack, Airflow, Kafka, et ma passion pour l'innovation technologique." />
+        <meta name="keywords" content="développeur, IA, epitech, next.js, airflow, kafka, prolog, n8n" />
+        <meta property="og:title" content="À propos | Tikinas Oughlis" />
+        <meta property="og:description" content="Mon parcours et mes compétences techniques" />
       </Head>
 
       <section className="py-16">

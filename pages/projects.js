@@ -7,8 +7,11 @@ export default function Projects() {
   return (
     <Layout>
       <Head>
-        <title>Mes Projets | Mon Portfolio</title>
-        <meta name="description" content="Découvrez mes projets de développement web" />
+        <title>Mes Projets | Tikinas Oughlis - Portfolio de développement</title>
+        <meta name="description" content="Découvrez mes projets : développement web, IA, automatisation n8n, hackathons et applications innovantes." />
+        <meta name="keywords" content="projets, next.js, react, node.js, ia, n8n, automatisation, hackathon" />
+        <meta property="og:title" content="Mes Projets | Tikinas Oughlis" />
+        <meta property="og:description" content="Portfolio de développement web et IA" />
       </Head>
 
       <section className="py-16">
