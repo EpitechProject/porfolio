@@ -27,11 +27,12 @@ export const projects = [
   },
   {
     id: 4,
-    title: "🤖 Amazed",
-    description: "Amazed est un projet où le but est de déplacer un groupe de robots à travers un labyrinthe, de l’entrée jusqu’à la sortie",
-    image: "", // "/images/projects/dashboard.jpg"
-    tags: ["Algorithm", "C"],
-    githubUrl: "https://github.com/EpitechProject/A_maze_d",
+    title: "🏠 CasaPlan",
+    description: "CasaPlan est une application 3D interactive permettant de concevoir et visualiser l'aménagement d'une chambre ou d'un appartement en temps réel. Créez, meublez et explorez vos pièces en 3D avec une interface intuitive. Intègre un chatbot IA assisteur pour vous aider dans la conception.",
+    image: "/images/casaplan.png",
+    tags: ["Next.js", "React", "Tailwind", "TypeScript", "Three.js", "IA", "Chatbot"],
+    githubUrl: "https://casa-plan-web-version.vercel.app/",
+    featured: true
   },
   {
     id: 5,

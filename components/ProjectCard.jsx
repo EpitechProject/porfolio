@@ -27,7 +27,7 @@ export default function ProjectCard({ project }) {
           ))}
         </div>
         
-        <div className="flex justify-between mt-auto">
+        <div className="flex justify-between mt-auto gap-2">
           {demoUrl && (
             <a 
               href={demoUrl} 
@@ -43,9 +43,13 @@ export default function ProjectCard({ project }) {
               href={githubUrl}
               target="_blank" 
               rel="noopener noreferrer"
-              className="bg-gray-800 hover:bg-gray-900 text-white text-sm font-medium py-2 px-4 rounded transition duration-300"
+              className={`text-white text-sm font-medium py-2 px-4 rounded transition duration-300 ${
+                githubUrl.includes('github.com') 
+                  ? 'bg-gray-800 hover:bg-gray-900' 
+                  : 'bg-green-600 hover:bg-green-700'
+              }`}
             >
-              Code source
+              {githubUrl.includes('github.com') ? 'Code source' : 'Voir l\'app'}
             </a>
           )}
         </div>
