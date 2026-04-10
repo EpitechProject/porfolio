@@ -40,8 +40,7 @@ export const projects = [
     description: "Plateforme SaaS d'IA qui démocratise le consulting en transformation d'entreprise. Analysez la santé financière de votre business, identifiez les problèmes et générez des stratégies de récupération personnalisées. Rend l'expertise en sauvetage d'entreprise accessible aux PME et startups.",
     image: "/images/evolis.png",
     tags: ["SaaS", "IA", "Full Stack", "Business Intelligence"],
-    githubUrl: "https://evolis-five.vercel.app/",
-    featured: true
+    githubUrl: "https://evolis-five.vercel.app/",    videoUrl: "https://www.youtube.com/watch?v=9WmOoUFFZi4",    featured: true
   },
   {
     id: 6,

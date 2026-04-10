@@ -1,7 +1,7 @@
 import Link from 'next/link';
 
 export default function ProjectCard({ project }) {
-  const { id, title, description, image, tags, demoUrl, githubUrl } = project;
+  const { id, title, description, image, tags, demoUrl, githubUrl, videoUrl } = project;
 
   return (
     <div className="bg-white rounded-lg overflow-hidden shadow-lg transition-transform duration-300 hover:-translate-y-2">
@@ -50,6 +50,17 @@ export default function ProjectCard({ project }) {
               }`}
             >
               {githubUrl.includes('github.com') ? 'Code source' : 'Voir l\'app'}
+            </a>
+          )}
+          {videoUrl && (
+            <a 
+              href={videoUrl}
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="bg-red-600 hover:bg-red-700 text-white text-sm font-medium py-2 px-4 rounded transition duration-300 flex items-center gap-1"
+              aria-label="Voir la vidéo de démonstration"
+            >
+              📹 Vidéo
             </a>
           )}
         </div>
