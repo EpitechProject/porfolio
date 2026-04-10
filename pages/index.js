@@ -57,7 +57,7 @@ export default function Home() {
         <div className="container mx-auto px-6">
           <h2 className="text-3xl font-bold text-center mb-8">Mes compétences</h2>
           <div className="flex flex-wrap justify-center gap-4">
-            {['HTML/CSS', 'JavaScript', 'React', 'Next.js', 'Node.js', 'TailwindCSS', 'Java', 'Python', 'C', 'n8n', 'SQL'].map((skill) => (
+            {['HTML/CSS', 'JavaScript', 'React', 'Next.js', 'Node.js', 'TailwindCSS', 'Java', 'Python', 'C', 'n8n', 'SQL', 'Airflow', 'Kafka', 'Prolog'].map((skill) => (
               <div key={skill} className="bg-white rounded-lg shadow-md px-6 py-3">
                 {skill}
               </div>

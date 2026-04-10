@@ -33,8 +33,20 @@ export default function About() {
               🎓 J’ai effectué 3 années d’études en informatique à Aix-Marseille Université de 2021 à 2024.
               <br />
               🎓 J’ai obtenu mon baccalauréat en 2020 (filière Mathématiques) au sein de l'école privée Les Iris.
-            </p>
-            
+            </p>            
+            <h2 className="text-2xl font-bold mt-12 mb-4">Mes expériences professionnelles</h2>
+            <div className="mb-8 border-l-4 border-blue-600 pl-6">
+              <h3 className="font-bold text-lg mb-2">Développeur IA - Enedis</h3>
+              <p className="text-gray-600 mb-3">Septembre 2025 - Décembre 2025</p>
+              <p className="mb-2">
+                Développement et optimisation de pipelines de données et d'orchestration de workflows :
+              </p>
+              <ul className="list-disc list-inside space-y-1 text-sm">
+                <li>Apache Airflow : conception et maintenance de DAGs pour l'orchestration de tâches</li>
+                <li>Apache Kafka : traitement en temps réel et gestion de flux de données</li>
+                <li>Prolog : développement de logiques d'inférence pour l'IA</li>
+              </ul>
+            </div>            
             <h2 className="text-2xl font-bold mt-12 mb-4">Mes compétences techniques</h2>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-12">
               <div>
@@ -53,6 +65,15 @@ export default function About() {
                   <li>MongoDB, PostgreSQL</li>
                   <li>API RESTful</li>
                   <li>Authentication & Authorization</li>
+                </ul>
+              </div>
+              <div>
+                <h3 className="font-bold mb-2">Ingénierie IA & Data</h3>
+                <ul className="list-disc list-inside space-y-1">
+                  <li>Apache Airflow</li>
+                  <li>Apache Kafka</li>
+                  <li>Prolog</li>
+                  <li>Machine Learning, Python</li>
                 </ul>
               </div>
             </div>
