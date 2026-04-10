@@ -49,15 +49,14 @@ export default function Home() {
           <div className="w-full md:w-3/5 py-6 text-center animate-fade-in-delay">
             <div className="relative h-64 w-64 md:h-96 md:w-96 mx-auto">
               <div className="h-full w-full rounded-full bg-gradient-to-br from-blue-400 to-blue-600 flex items-center justify-center text-xl text-white shadow-lg">
-                <span>👨‍💻</span>
+                <Image
+                  src="/images/tikinas.jpg"
+                  alt="Photo de profil professionnelle de Tikinas Oughlis"
+                  layout="fill"
+                  className="rounded-full"
+                  objectFit="cover"
+                />
               </div>
-              {/* <Image
-                src="/images/tikinas.jpg"
-                alt="Photo de profil professionnelle de Tikinas Oughlis"
-                layout="fill"
-                className="rounded-full"
-                objectFit="cover"
-              /> */}
             </div>
           </div>
         </div>
