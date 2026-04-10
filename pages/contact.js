@@ -14,8 +14,10 @@ export default function Contact() {
   const [submitStatus, setSubmitStatus] = useState(null);
 
   useEffect(() => {
-    // Initialize EmailJS (replace with your public key)
-    emailjs.init("YOUR_EMAILJS_PUBLIC_KEY");
+    // Initialize EmailJS with environment variable
+    if (process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY) {
+      emailjs.init(process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY);
+    }
   }, []);
 
   const handleChange = (e) => {
@@ -27,12 +29,20 @@ export default function Contact() {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
+    
+    // Vérifier que les variables d'environnement sont présentes
+    if (!process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID || !process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID) {
+      setSubmitStatus('error-config');
+      setTimeout(() => setSubmitStatus(null), 5000);
+      return;
+    }
+    
     setIsSubmitting(true);
 
     try {
       await emailjs.send(
-        "YOUR_SERVICE_ID",
-        "YOUR_TEMPLATE_ID",
+        process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID,
+        process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID,
         {
           from_name: formData.name,
           from_email: formData.email,
@@ -46,7 +56,7 @@ export default function Contact() {
       setFormData({ name: '', email: '', subject: '', message: '' });
       setTimeout(() => setSubmitStatus(null), 5000);
     } catch (error) {
-      console.error('Erreur:', error);
+      console.error('Erreur EmailJS:', error);
       setSubmitStatus('error');
       setTimeout(() => setSubmitStatus(null), 5000);
     }
@@ -119,6 +129,12 @@ export default function Contact() {
                 {submitStatus === 'error' && (
                   <div className="mb-4 p-4 bg-red-100 border border-red-400 text-red-700 rounded" role="alert">
                     Erreur lors de l'envoi. Veuillez réessayer ou m'envoyer un email directement.
+                  </div>
+                )}
+
+                {submitStatus === 'error-config' && (
+                  <div className="mb-4 p-4 bg-yellow-100 border border-yellow-400 text-yellow-700 rounded" role="alert">
+                    ⚠️ Configuration EmailJS manquante. Veuillez configurer les variables d'environnement sur Vercel.
                   </div>
                 )}
 
