@@ -36,11 +36,12 @@ export const projects = [
   },
   {
     id: 5,
-    title: "🚢 Battleship",
-    description: "Un jeu de bataille navale simple et interactif en terminal, codé from scratch en C.",
-    image: "/images/battle.png",
-    tags: ["React", "API", "Geolocation"],
-    githubUrl: "https://github.com/EpitechProject/naval-battle",
+    title: "� Evolis",
+    description: "Plateforme SaaS d'IA qui démocratise le consulting en transformation d'entreprise. Analysez la santé financière de votre business, identifiez les problèmes et générez des stratégies de récupération personnalisées. Rend l'expertise en sauvetage d'entreprise accessible aux PME et startups.",
+    image: "/images/evolis.png",
+    tags: ["SaaS", "IA", "Full Stack", "Business Intelligence"],
+    githubUrl: "https://evolis-five.vercel.app/",
+    featured: true
   },
   {
     id: 6,
