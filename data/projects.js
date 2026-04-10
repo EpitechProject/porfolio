@@ -30,16 +30,16 @@ export const projects = [
     title: "🏠 CasaPlan",
     description: "CasaPlan est une application 3D interactive permettant de concevoir et visualiser l'aménagement d'une chambre ou d'un appartement en temps réel. Créez, meublez et explorez vos pièces en 3D avec une interface intuitive. Intègre un chatbot IA assisteur pour vous aider dans la conception.",
     image: "/images/casaplan.png",
-    tags: ["Next.js", "React", "Tailwind", "TypeScript", "Three.js", "IA", "Chatbot"],
+    tags: ["Next.js", "React", "Tailwind", "TypeScript", "Three.js", "IA", "Chatbot", "Firebase"],
     githubUrl: "https://casa-plan-web-version.vercel.app/",
     featured: true
   },
   {
     id: 5,
-    title: "� Evolis",
-    description: "Plateforme SaaS d'IA qui démocratise le consulting en transformation d'entreprise. Analysez la santé financière de votre business, identifiez les problèmes et générez des stratégies de récupération personnalisées. Rend l'expertise en sauvetage d'entreprise accessible aux PME et startups.",
+    title: "🚀 Evolis",
+    description: "Plateforme SaaS d'IA primée au Hackathon Amazon Nova qui démocratise le consulting en transformation d'entreprise. Analysez la santé financière de votre business, identifiez les problèmes et générez des stratégies de récupération personnalisées. Rend l'expertise en sauvetage d'entreprise accessible aux PME et startups. Propulsée par Amazon Nova pour des analyses ultra-rapides.",
     image: "/images/evolis.png",
-    tags: ["SaaS", "IA", "Full Stack", "Business Intelligence"],
+    tags: ["SaaS", "IA", "Full Stack", "Business Intelligence", "Firebase", "Amazon Nova"],
     githubUrl: "https://evolis-five.vercel.app/",    videoUrl: "https://www.youtube.com/watch?v=9WmOoUFFZi4",    featured: true
   },
   {
