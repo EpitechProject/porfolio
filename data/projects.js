@@ -10,11 +10,11 @@ export const projects = [
   },
   {
     id: 2,
-    title: "✅ Epytodo",
-    description: " EpyTodo est un projet visant à développer une API RESTful permettant de gérer une liste de tâches (ToDo List) avec des utilisateurs et des droits d’accès.",
-    image: "/images/epytodo.png",
-    tags: ["Node.js", "HTML/CSS", "Javascript"],
-    githubUrl: "https://github.com/EpitechProject/EpyTodo",
+    title: "♟️ Checkers",
+    description: "Checkers.com est une plateforme de jeu de dames en ligne avec interface moderne et gameplay fluide. Jouez contre d'autres joueurs, consultez vos statistiques et améliorez votre stratégie.",
+    image: "/images/checkers.png",
+    tags: ["Next.js", "React", "Tailwind", "Gameplay"],
+    githubUrl: "https://nextjs-boilerplate-henna-zeta-38.vercel.app/",
     featured: true
   },
   {
